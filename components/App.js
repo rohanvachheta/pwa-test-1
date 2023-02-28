@@ -83,7 +83,7 @@ export default class CustomButton extends Component {
 
   getText = () => {
     return this.state.unlocked
-    ? this.props.text_unlocked || "برای روشن کردن مموتور به راست بکشی"
+    ? this.props.text_unlocked || "Trip Started"
     : this.props.text || "";
   };
 
