@@ -30,6 +30,12 @@
 
 
 import Head from "next/head";
+import dynamic from 'next/dynamic';
+
+const App = dynamic(
+  () => import('../components/App'),
+  { ssr: false }
+)
 
 export default function Home() {
   return (
@@ -40,14 +46,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div style={{ textAlign: "center" }}>
-          <h1>This is a Progressive web application - Nextjs</h1>
-          <p>
-            <a href="https://melvingeorge.me/blog/nextjs-pwa">
-              read more about on how to setup here
-            </a>
-          </p>
-        </div>
+        <App/>
       </main>
     </div>
   );
