@@ -123,7 +123,7 @@ export default class CustomButton extends Component {
               <span className="rsbcSliderArrow"></span>
             </span>
           </div>
-          <div className="rsbcText">برای روشن کردن بکشید</div>
+          <div className="rsbcText">Trip started</div>
         </div>
       </div>
     );
