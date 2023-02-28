@@ -28,26 +28,27 @@
 
 
 
-const axios = require('axios');
-import styles from '../styles/Home.module.css';
 
-;(async function  () {
-  
+import Head from "next/head";
 
-})()
-
-export default function Home(props) {
-console.log("🚀 ~ file: index.js:40 ~ Home ~ props", props)
-
-
-
-
+export default function Home() {
   return (
-    <div className={styles.container}>
-    
-    testsdfdsf
+    <div className="container">
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    <a href="https://staging-carrier.peddle.com/assignments/open-assignments">test</a>
+      <main>
+        <div style={{ textAlign: "center" }}>
+          <h1>This is a Progressive web application - Nextjs</h1>
+          <p>
+            <a href="https://melvingeorge.me/blog/nextjs-pwa">
+              read more about on how to setup here
+            </a>
+          </p>
+        </div>
+      </main>
     </div>
-  )
+  );
 }
